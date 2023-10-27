@@ -1,16 +1,16 @@
 PODS:
-  - TFNetworking (1.0.0)
+  - MFNetworking (1.0.0)
 
 DEPENDENCIES:
-  - TFNetworking (from `../`)
+  - MFNetworking (from `../`)
 
 EXTERNAL SOURCES:
-  TFNetworking:
+  MFNetworking:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TFNetworking: a7b6dd30f3fd6e856fb7267f3973d0c240ff7d5d
+  MFNetworking: 73012ba12dc0af7159c1b1078ab142a60eabf12a
 
-PODFILE CHECKSUM: 0618d4b08746b87b2defd94a4eac3d0d73470bf3
+PODFILE CHECKSUM: fd46e274bf689a33b7c3104d5f57a4722f5a2692
 
 COCOAPODS: 1.14.0

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double TFNetworkingVersionNumber;
-FOUNDATION_EXPORT const unsigned char TFNetworkingVersionString[];
+FOUNDATION_EXPORT double MFNetworkingVersionNumber;
+FOUNDATION_EXPORT const unsigned char MFNetworkingVersionString[];
 

@@ -1,6 +1,0 @@
-framework module TFNetworking {
-  umbrella header "TFNetworking-umbrella.h"
-
-  export *
-  module * { export * }
-}
