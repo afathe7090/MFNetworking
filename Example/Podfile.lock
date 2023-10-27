@@ -2,15 +2,15 @@ PODS:
   - MFNetworking (1.0.0)
 
 DEPENDENCIES:
-  - MFNetworking (from `../`)
+  - MFNetworking
 
-EXTERNAL SOURCES:
-  MFNetworking:
-    :path: "../"
+SPEC REPOS:
+  trunk:
+    - MFNetworking
 
 SPEC CHECKSUMS:
-  MFNetworking: 73012ba12dc0af7159c1b1078ab142a60eabf12a
+  MFNetworking: b5e03b3eb89c4f0e4651ed34d7268caaaebeb5ff
 
-PODFILE CHECKSUM: fd46e274bf689a33b7c3104d5f57a4722f5a2692
+PODFILE CHECKSUM: 33052dd341cbf7f3e9943af9a7fc3b96059bdb0f
 
 COCOAPODS: 1.14.0
