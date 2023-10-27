@@ -1,0 +1,16 @@
+PODS:
+  - TFNetworking (1.0.0)
+
+DEPENDENCIES:
+  - TFNetworking (from `../`)
+
+EXTERNAL SOURCES:
+  TFNetworking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TFNetworking: a7b6dd30f3fd6e856fb7267f3973d0c240ff7d5d
+
+PODFILE CHECKSUM: 0618d4b08746b87b2defd94a4eac3d0d73470bf3
+
+COCOAPODS: 1.14.0

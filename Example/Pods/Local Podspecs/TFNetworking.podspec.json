@@ -1,0 +1,21 @@
+{
+  "name": "TFNetworking",
+  "version": "1.0.0",
+  "summary": "Infrastructure is network manager allow to request with multipart",
+  "description": "Infrastructure is network manager allow to request with multipart and support combine frameworks",
+  "homepage": "https://github.com/afathe7090/TFNetworking",
+  "license": "MIT",
+  "authors": {
+    "Ahmed Fathy": "afathe7090"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source": {
+    "git": "https://github.com/afathe7090/TFNetworking.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "TFNetworking/**/*",
+  "swift_versions": "5.9",
+  "swift_version": "5.9"
+}

@@ -1,7 +1,7 @@
 import XCTest
-@testable import TFNetworking
+@testable import MFNetworking
 
-final class TFNetworkingTests: XCTestCase {
+final class MFNetworkingTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
