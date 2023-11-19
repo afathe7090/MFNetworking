@@ -20,7 +20,7 @@ public enum MimeType: String {
     case mp3 = "audio/mpeg"
     case wav = "audio/wav"
     case ogg = "audio/ogg"
-    case m4a = "audio/mp4"
+    case m4a = "audio/m4a"
     case aac = "audio/aac"
     case flac = "audio/flac"
 
