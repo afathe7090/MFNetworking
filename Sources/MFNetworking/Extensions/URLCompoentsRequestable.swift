@@ -16,9 +16,9 @@ public extension URLComponents {
             queryItems = parameter.map(QueryItemsParamaterMapper.map)
         }
         
-        if case let HTTPRequestTask.requestMultipart(_, _, parameter) = requester.task {
-            if parameter.isEmpty { return }
-            queryItems = parameter.map(QueryItemsParamaterMapper.map)
+        if case let HTTPRequestTask.requestMultipart(item) = requester.task {
+            if item.parameters.isEmpty { return }
+            queryItems = item.parameters.map(QueryItemsParamaterMapper.map)
         }
     }
 }

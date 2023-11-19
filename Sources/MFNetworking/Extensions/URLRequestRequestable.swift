@@ -25,8 +25,8 @@ public extension URLRequest {
         }
         
         // MARK: - Multi-part
-        if case let HTTPRequestTask.requestMultipart(parameters, boundary, _) = requester.task {
-            let body = multiPart(withParameters: parameters, boundary: boundary)
+        if case let HTTPRequestTask.requestMultipart(item) = requester.task {
+            let body = multiPart(withParameters: item.objectDic, boundary: item.boundary, mimeType: item.type)
             self.httpBody = body
         }
 

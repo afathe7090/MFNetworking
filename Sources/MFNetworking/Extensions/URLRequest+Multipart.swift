@@ -1,7 +1,7 @@
 import Foundation
 
 extension URLRequest {
-    func multiPart(withParameters params: [String: Any]?, boundary: String) -> Data {
+    func multiPart(withParameters params: [String: Any]?, boundary: String, mimeType: MimeType) -> Data {
         let lineBreak = "\r\n"
         var body = Data()
 
@@ -12,8 +12,8 @@ extension URLRequest {
                     body.append("--\(boundary + lineBreak)")
                     body.append("Content-Disposition: form-data;"
                                 + "name=\"\(key)\"; "
-                                + "filename=\"\(UUID().uuidString).jpeg\"\(lineBreak)")
-                    body.append("Content-Type: image/jpeg" + lineBreak + lineBreak)
+                                + "filename=\"\(UUID().uuidString).\(mimeType.rawValue.extensionFromMime)\"\(lineBreak)")
+                    body.append("Content-Type: \(mimeType.rawValue)" + lineBreak + lineBreak)
                     body.append(value)
                     body.append(lineBreak)
 
@@ -34,5 +34,11 @@ extension URLRequest {
         body.append("--\(boundary)--\(lineBreak)")
 
         return body
+    }
+}
+
+private extension String {
+    var extensionFromMime: String {
+        split(separator: "/").compactMap({String($0)}).last ?? ""
     }
 }

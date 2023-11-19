@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "AAE5BBCF-8A48-4A5D-8BCE-033DE6B69A89",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "MFNetworkingTests",
+        "name" : "MFNetworkingTests"
+      }
+    }
+  ],
+  "version" : 1
+}

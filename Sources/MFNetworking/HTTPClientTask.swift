@@ -7,5 +7,5 @@ public enum HTTPRequestTask {
     case requestPlain
     case requestBody(Encodable, Parameters = [:])
     case requestParameters(Parameters)
-    case requestMultipart(Parameters ,boundary: String, Parameters = [:])
+    case requestMultipart(MultipartItem)
 }
