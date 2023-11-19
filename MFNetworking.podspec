@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MFNetworking"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "MFNetworking is network manager allow to request with multipart"
   spec.description  = "MFNetworking is network manager allow to request with multipart and support combine frameworks"
   spec.homepage     = "https://github.com/afathe7090/MFNetworking"
