@@ -12,7 +12,7 @@ extension URLRequest {
                     body.append("--\(boundary + lineBreak)")
                     body.append("Content-Disposition: form-data;"
                                 + "name=\"\(key)\"; "
-                                + "filename=\"\(UUID().uuidString).\(mimeType.rawValue.extensionFromMime)\"\(lineBreak)")
+                                + "filename=\"\(UUID().uuidString).\(mimeType.extensionType)\"\(lineBreak)")
                     body.append("Content-Type: \(mimeType.rawValue)" + lineBreak + lineBreak)
                     body.append(value)
                     body.append(lineBreak)
@@ -34,11 +34,5 @@ extension URLRequest {
         body.append("--\(boundary)--\(lineBreak)")
 
         return body
-    }
-}
-
-private extension String {
-    var extensionFromMime: String {
-        split(separator: "/").compactMap({String($0)}).last ?? ""
     }
 }

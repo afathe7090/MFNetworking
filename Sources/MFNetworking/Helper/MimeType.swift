@@ -46,4 +46,12 @@ public enum MimeType: String {
     case html = "text/html"
     case xml = "text/xml"
     case json = "application/json"
+    
+    var extensionType: String {
+        switch self {
+        case .m4a: return "m4a"
+        default:
+            return rawValue.split(separator: "/").compactMap({String($0)}).last ?? ""
+        }
+    }
 }
